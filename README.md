@@ -68,7 +68,7 @@ Supports:
 
 * `mnist`: test by index (0 = first test image)
 * `imdb`: input a text string (e.g., "This movie was great!")
-* `boston`: test housing prediction by index
+* `california`: test housing prediction by index
 
 All use GPU if available.
 
@@ -77,7 +77,7 @@ All use GPU if available.
 ```bash
 python3 inference.py --task mnist --model models/mnist_cnn.pth --input 0
 python3 inference.py --task imdb --model models/imdb_sentiment_hf.pth --input "Awesome movie, I loved it."
-python3 inference.py --task boston --model models/california_model.pth --input 5
+python3 inference.py --task california --model models/california_model.pth --input 5
 ```
 
 ---
